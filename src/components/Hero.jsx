@@ -10,9 +10,8 @@ import { heroConfig } from "../constants/hero.config";
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import DevOpsIcons from "./DevOpsIcons";
 import { styles } from "../styles";
-import { TicofabCanvas } from "./canvas";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import {
@@ -64,8 +63,7 @@ words: [
           </p>
         </div>
       </div>
-      <TicofabCanvas />
-
+<DevOpsIcons />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
