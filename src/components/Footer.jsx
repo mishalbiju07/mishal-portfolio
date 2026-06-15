@@ -23,7 +23,7 @@ const Footer = () => {
           {new Date().getFullYear()} &copy;Mishal Biju!.
         </p>
       </div>
-      <div className="w-full h-auto flex justify-center text-purple-500 font-bold self-start text-2xl">
+      <div className="w-full h-auto flex justify-center animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-bold self-start text-2xl">
         <Typewriter
           text={[
             "Thank's for visiting!",

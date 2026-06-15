@@ -27,8 +27,8 @@ import {
 const Hero = () => {
   const [text, count] = useTypewriter({
 words: [
-  "Cloud Engineer",
-  "DevOps Enthusiast",
+  "Cloud ",
+  "DevOps ",
   "AWS & Kubernetes",
   "Terraform Automation",
   "CI/CD Pipelines",
@@ -45,14 +45,15 @@ words: [
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500"></div>
-          <div className="w-1 sm:h-80 h-40 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500"></div>
+<div className="w-5 h-5 rounded-full animate-text bg-[linear-gradient(to_bottom,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)]"></div>
+
+<div className="w-1 sm:h-80 h-40 animate-text bg-[linear-gradient(to_bottom,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)]"></div>
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm{" "}
-            <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
+<span className="animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black">
               Mishal <span className="hidden sm:inline">Biju</span>
             </span>
           </h1>

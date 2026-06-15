@@ -40,7 +40,7 @@ const About = () => {
       <div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2
-          className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}
+          className={`${styles.sectionHeadText} animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black`}
         >
           Overview.
         </h2>
@@ -70,7 +70,7 @@ const About = () => {
           Feel free to explore my projects and get in touch at{" "}
           <a
             href="mailto:Mishalbiju07@gmail.com"
-            className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black"
+            className="animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black"
           >
             Mishalbiju07@gmail.com
           </a>

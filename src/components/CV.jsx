@@ -41,7 +41,7 @@ return (
             hover:shadow-[#38bdf8]/40">
             
             {/* The Text wrapper using your exact text header styles */}
-            <span className="block animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black text-lg flux tracking-wide">
+            <span className="block animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black text-lg flux tracking-wide">
               Download CV
             </span>
             

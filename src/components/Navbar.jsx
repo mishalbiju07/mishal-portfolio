@@ -46,7 +46,7 @@ const Navbar = () => {
 <img
   src={LOGO2}
   alt="logo"
-  className="w-[30px] h-[30px] object-contain"
+  className="w-[180px] h-[150px] object-contain"
 />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
            
@@ -62,7 +62,7 @@ const Navbar = () => {
               }   font-medium cursor-pointer border-[1px]`}
               onClick={() => setActive(Link.title)}
             >
-              <span className="flex items-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
+<span className="animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black">
                 {" "}
                 <svg
                   class="fill-current w-4 h-4 mr-2"
@@ -110,7 +110,7 @@ const Navbar = () => {
               }   font-medium cursor-pointer border-[1px]`}
               onClick={() => setActive(Link.title)}
             >
-              <span className="flex items-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
+              <span className="flex items-center animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black">
                 {" "}
                 <svg
                   class="fill-current w-4 h-4 mr-2"
