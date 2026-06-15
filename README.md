@@ -1,7 +1,7 @@
 
 
 <div align="center">
-    <a href="https://github.com/jeffjiang13/3d-portfolio">
+    <a href="https://mishalbiju07.github.io/mishal-portfolio/">
         <img src="src/assets/logo3.png" alt="3D Portfolio Logo" width="235" height="150">
     </a>
 </div>
