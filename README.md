@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-    <a href="https://jeffjiang.vercel.app/"><strong>🚀 View Demo</strong></a>
+    <a href="https://mishalbiju07.github.io/mishal-portfolio/"><strong>Link to View</strong></a>
 </p>
 
 ## About The Project
