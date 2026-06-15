@@ -17,7 +17,7 @@ const Footer = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={LOGO2} alt="logo" className="w-35 h-35 object-contain" />
+          <img src={LOGO2} alt="logo" className="w-28 h-28 object-contain" />
         </Link>
         <p className="text-secondary text-[17px] leading-[30px] text-center select-none">
           {new Date().getFullYear()} &copy;Mishal Biju!.

@@ -43,9 +43,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={LOGO2} alt='logo' className='w-45 h-40 object-contain' />
+          <img src={LOGO2} alt='logo' className='w-38 h-38 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-           Cloud / DevOps &nbsp;
+           ;
             {/* <span className='sm:block hidden'> | Portfolio</span> */}
           </p>
         </Link>
