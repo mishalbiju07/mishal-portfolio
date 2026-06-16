@@ -19,8 +19,7 @@
     <img src="https://img.shields.io/badge/💻_Source_Code-GitHub-24292F?style=for-the-badge&logo=github">
   </a>
 </p>
-## About The Project
-
+### About The Project
 This 3D Portfolio Website is a creative approach to showcasing a portfolio in an interactive 3D environment. It uses Three.js and React Three Fiber to render a dynamic and immersive experience, allowing visitors to explore projects and skills in a way that's engaging and memorable.
 
 ### Features
