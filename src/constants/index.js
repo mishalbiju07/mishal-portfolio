@@ -36,11 +36,6 @@
  * ──────────────────────────────────────────────────────────────────────
  */
 
-// ── Service-card icons ────────────────────────────────────────────────
-import cloud     from "../assets/cloud.png";
-import devops    from "../assets/devops.png";
-import backend   from "../assets/backend.png";
-import automation from "../assets/automation.png";
 
 // ── Certification icons ─────────────────────────────────────
 import linuxIntro from "../assets/certifications/linux_intro.png";
@@ -77,28 +72,6 @@ export const navLinks = [
   { id: "about",   title: "About"   },
   { id: "work",    title: "Work"    },
   { id: "contact", title: "Contact" },
-];
-
-// ─────────────────────────────────────────────────────────────────────
-// SERVICES  (four cards in the "About" / Overview section)
-// ─────────────────────────────────────────────────────────────────────
-const services = [
-  {
-    title: "Cloud",
-    icon: cloud,
-  },
-  {
-    title: "DevOps",
-    icon: devops,
-  },
-  {
-    title: "Infrastructure Automation",
-    icon: automation,
-  },
-  {
-    title: "Linux & Servers",
-    icon: backend,
-  },
 ];
 
 const certifications = [
@@ -264,7 +237,6 @@ const projects = [
 ];
 
 export {
-  services,
   technologies,
   experiences,
   testimonials,

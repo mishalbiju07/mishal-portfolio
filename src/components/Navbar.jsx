@@ -65,7 +65,7 @@ const Navbar = () => {
 <span className="animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black">
                 {" "}
                 <svg
-                  class="fill-current w-4 h-4 mr-2"
+                  className="fill-current w-4 h-4 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -113,7 +113,7 @@ const Navbar = () => {
               <span className="flex items-center animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black">
                 {" "}
                 <svg
-                  class="fill-current w-4 h-4 mr-2"
+                  className="fill-current w-4 h-4 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
