@@ -17,8 +17,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+    const { name, value } = e.target;
 
     setForm({
       ...form,
@@ -29,16 +28,19 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-emailjs.send(
-  import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-  import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-  {
-    from_name: form.name,
-    reply_to: form.email,
-    message: form.message,
-  },
-  import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-)
+
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          title: "Portfolio Contact",
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
       .then(
         () => {
           setLoading(false);
@@ -50,69 +52,72 @@ emailjs.send(
             message: "",
           });
         },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
+(error) => {
+  setLoading(false);
+  console.error(error);
+  alert("Something went wrong. Please try again later.");
+}
       );
   };
 
   return (
-
-    <div
-    className="xl:mt-12 flex flex-col items-center justify-center gap-10 overflow-hidden"
-    >
+    <div className="xl:mt-12 flex flex-col items-center justify-center gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h2 className={`${styles.sectionHeadText} animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black`}>Contact.</h2>
+
+        <h2
+          className={`${styles.sectionHeadText} animate-text bg-[linear-gradient(to_right,#03045e,#0077b6,#00b4d8,#90e0ef,#caf0f8)] bg-clip-text text-transparent font-black`}
+        >
+          Contact.
+        </h2>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className="mt-12 flex flex-col gap-8"
         >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Name</span>
             <input
-              type='text'
-              name='name'
+              type="text"
+              name="name"
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your email</span>
             <input
-              type='email'
-              name='email'
+              type="email"
+              name="email"
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
-              rows={7}
-              name='message'
+              rows="7"
+              name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What's your message?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
 
           <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            type="submit"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -121,9 +126,8 @@ emailjs.send(
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-      </motion.div>
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      />
     </div>
   );
 };
