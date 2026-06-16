@@ -1,11 +1,8 @@
-
-
 <div align="center">
   <a href="https://mishalbiju07.github.io/mishal-portfolio/">
-    <img src="https://raw.githubusercontent.com/mishalbiju07/mishal-portfolio/main/src/assets/logo3.png"
-         alt="3D Portfolio Logo"
-         width="235"
-         height="150">
+    <img src="https://github.com/mishalbiju07/mishal-portfolio/blob/main/src/assets/tech/logo3.png?raw=true"
+         alt="Portfolio Logo"
+         width="235">
   </a>
 </div>
 <h1 align="center">3D Portfolio Website</h1>
