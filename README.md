@@ -8,15 +8,17 @@
 <h1 align="center">3D Portfolio Website</h1>
 
 <p align="center">
-    <b>Explore the interactive 3D space that showcases my projects and skills. Built with the power of Three.js and React.js.</b>
+    <b>Explore the interactive 3D space that Built with the power of Three.js and React.js.</b>
 </p>
 
 <p align="center">
-    <a href="https://mishalbiju07.github.io/mishal-portfolio/"><strong>Link to View(github Pages)</strong></a>
-    <br>
-    <a href="https://mishal-biju.vercel.app"><strong>Link (VERCEL)</strong></a>
+  <a href="https://mishal-biju.vercel.app">
+    <img src="https://img.shields.io/badge/🚀_Live_Portfolio-Visit_Now-00C853?style=for-the-badge">
+  </a>
+  <a href="https://github.com/mishalbiju07/mishal-portfolio">
+    <img src="https://img.shields.io/badge/💻_Source_Code-GitHub-24292F?style=for-the-badge&logo=github">
+  </a>
 </p>
-
 ## About The Project
 
 This 3D Portfolio Website is a creative approach to showcasing a portfolio in an interactive 3D environment. It uses Three.js and React Three Fiber to render a dynamic and immersive experience, allowing visitors to explore projects and skills in a way that's engaging and memorable.
