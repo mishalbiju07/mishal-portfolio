@@ -29,20 +29,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          name: form.name,
-          to_name: "Mishal Biju",
-          email: form.email,
-          to_email: "mishalbiju07@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
+emailjs.send(
+  import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+  {
+    from_name: form.name,
+    reply_to: form.email,
+    message: form.message,
+  },
+  import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+)
       .then(
         () => {
           setLoading(false);
